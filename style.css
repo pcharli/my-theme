@@ -8,3 +8,7 @@ Requires at least: 5.2
 h1 {
     color: red;
 }
+
+input.search-form-input {
+    width: 80%;
+}

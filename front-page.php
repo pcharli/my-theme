@@ -9,6 +9,8 @@
         </section>
         <?php endwhile; ?>
         <?php endif;?>
+        <hr>
+        <?php get_template_part( 'template_parts/last-news' );?>
     </main>
-    <?php //get_sidebar();?>
+    <?php get_sidebar();?>
     <?php get_footer();?>
