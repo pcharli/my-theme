@@ -12,3 +12,10 @@ h1 {
 input.search-form-input {
     width: 80%;
 }
+
+section.section.listing {
+    display: flex;
+}
+section.section.listing .vignette {
+    margin-right: 1rem;
+}

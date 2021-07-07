@@ -1,0 +1,1 @@
+<p>Texte venant de single.php</p>

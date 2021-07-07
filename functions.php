@@ -1,7 +1,7 @@
 <?php
 ## INCLUDES
    require get_template_directory() . '/inc/my_functions.php';
-   require get_template_directory() . '/inc/customs.php';
+   //require get_template_directory() . '/inc/customs.php';
    require get_template_directory() . '/inc/acf-control.php';
 
 ## Menus de navigation
@@ -90,6 +90,29 @@ add_theme_support('html5',array(
     'search-form',
     'caption',
     'gallery'
+));
+
+//Activer les formats
+add_theme_support('post-formats', array(
+    'video',
+    'gallery',
+    'audio'
+));
+add_post_type_support( 'page', 'post-formats' );
+
+// css pour classic-editor
+add_theme_support('editor-styles');
+add_editor_style('editor-style.css');
+
+// font-size in new editor
+add_theme_support( 'disable-custom-font-sizes' );
+add_theme_support('editor-font-sizes', array(
+    array(
+        'name' => __("small"),
+        'size' => 12,
+        'slug' => 'small',
+        'shortname' => 's'
+    )
 ));
 
 // taille de l'extrait
