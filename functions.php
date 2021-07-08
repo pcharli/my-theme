@@ -4,6 +4,7 @@
    //require get_template_directory() . '/inc/customs.php';
    require get_template_directory() . '/inc/acf-control.php';
    require get_template_directory() . '/inc/my_shortcodes.php';
+   require get_template_directory() . '/inc/admin-customise.php';
 
 ## Menus de navigation
 register_nav_menus( array(
