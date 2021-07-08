@@ -3,6 +3,7 @@
    require get_template_directory() . '/inc/my_functions.php';
    //require get_template_directory() . '/inc/customs.php';
    require get_template_directory() . '/inc/acf-control.php';
+   require get_template_directory() . '/inc/my_shortcodes.php';
 
 ## Menus de navigation
 register_nav_menus( array(
@@ -100,6 +101,7 @@ add_theme_support('post-formats', array(
 ));
 add_post_type_support( 'page', 'post-formats' );
 
+## EDITORS IN WP-ADMIN
 // css pour classic-editor
 add_theme_support('editor-styles');
 add_editor_style('editor-style.css');
@@ -112,8 +114,30 @@ add_theme_support('editor-font-sizes', array(
         'size' => 12,
         'slug' => 'small',
         'shortname' => 's'
+    ),
+    array(
+        'name' => __("medium"),
+        'size' => 16,
+        'slug' => 'medium',
+        'shortname' => 'm'
     )
 ));
+
+//Palette de couleurs Gutemberg
+add_theme_support('disable-custom-colors');
+add_theme_support('editor-color-palette', array(
+    array(
+        'name' => "silver",
+        "slug" => 'silver',
+        'color' => "#1a1a1a"
+    ),
+    array(
+        'name' => "Royal blue light",
+        "slug" => 'blue-royal-light',
+        'color' => "rgba(0,35,102,.5)"
+    )
+    ));
+## END EDITORS
 
 // taille de l'extrait
 function custom_excerpt_length($length) {

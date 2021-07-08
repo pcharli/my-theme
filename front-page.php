@@ -5,6 +5,7 @@
             //myPrint_r($post);?>
         <section <?php post_class('section');?>>
             <?php the_title('<h1 class="title">Titre: ', '</h1>');?>
+            <?php echo do_shortcode('bonjour');?>
             <?php the_content();?>
         </section>
         <?php endwhile; ?>
