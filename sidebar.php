@@ -16,5 +16,6 @@ foreach ($secteurs as $key => $value): ?>
             </li>
             <?php endforeach;?>
         </ul>
+        <?php dynamic_sidebar('sidebar-right');?>
     </aside>
 </div>

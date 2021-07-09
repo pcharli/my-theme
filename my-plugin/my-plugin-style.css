@@ -1,3 +1,6 @@
 h2.my-plugin {
     color: red !important;
 }
+.mp-details-voyages dt {
+    font-weight: bold;
+}
